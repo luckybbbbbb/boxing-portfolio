@@ -163,6 +163,24 @@ const Achievements = () => {
             </div>
           </div>
         </div>
+
+        {/* Latest Achievement */}
+        <div className={`mt-16 bg-gradient-to-r from-yellow-900/20 to-red-900/20 rounded-2xl p-8 border border-yellow-500/30 transform transition-all duration-1000 delay-900 ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+        }`}>
+          <div className="text-center mb-6">
+            <h3 className="text-3xl font-bold text-white mb-4">
+              NAJBOLJI BOKSER <span className="text-yellow-400">PRVENSTVA SRBIJE</span>
+            </h3>
+            <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-red-500 mx-auto"></div>
+          </div>
+          
+          <div className="bg-black/50 rounded-xl p-6 border border-gray-700">
+            <p className="text-gray-300 text-lg leading-relaxed text-center">
+              Član Bokserskog kluba Novi Pazar, <span className="text-white font-bold">Džejlan Toskić</span>, proglašen je za najboljeg boksera na pojedinačnom prvenstvu Srbije, pošto je u finalu u velter kategoriji (66 kg) savladao <span className="text-yellow-400 font-bold">Sejdija Nazifa iz Sombora 5:0</span>, saopštio je danas Bokserski savez Srbije. Toskiću je pehar uručio <span className="text-red-400 font-bold">legendarni srpski bokser Mirko Puzović</span>.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
